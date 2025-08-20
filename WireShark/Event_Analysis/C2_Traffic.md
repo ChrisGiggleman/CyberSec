@@ -1,16 +1,15 @@
-# Wireshark Event Analysis
+# Command & Control (C2) Traffic
 
-This guide contains examples and playbooks for using Wireshark in a SOC or pentesting context.
+## Overview
+C2 traffic is used by malware to communicate with a remote server. Detecting it is critical for SOC analysts to stop malware spread and data exfiltration.
 
----
+## Indicators of Compromise
+- Repeated small packets to external IPs at regular intervals
+- Encrypted traffic over uncommon ports
+- Connections to suspicious or newly registered domains
+- Unusual DNS requests (long/randomized domains, TXT record abuse)
 
-## 1. Detecting Malicious C2 Traffic
-**Indicators:**
-- Repeated small packets to external IPs on non-standard ports
-- Unusual DNS queries (long/randomized domains)
-- Encrypted traffic to uncommon endpoints
-
-**Filters:**
+## Wireshark Filters
 ```text
 dns || tls
 ip.addr == <suspect_ip>
