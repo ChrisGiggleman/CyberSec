@@ -1,0 +1,12 @@
+# Wireshark Protocol Analysis
+
+Click a protocol below to view SOC & Pentesting analysis:
+
+- [HTTP](HTTP.md)
+- [DNS](DNS.md)
+- [TLS/SSL](TLS_SSL.md)
+- [ICMP](ICMP.md)
+- [SMB](SMB.md)
+- [SMTP / IMAP / POP3](SMTP_IMAP_POP3.md)
+
+(More protocols will be added as the knowledge base grows.)
