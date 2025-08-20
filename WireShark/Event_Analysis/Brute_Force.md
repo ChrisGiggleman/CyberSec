@@ -25,14 +25,17 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0
 
 # Failed login attempts (example SMB)
 smb2 && smb2.nt_status == 0xC000006D
-Analysis Tips
+
+_________________________________________
+
+## Analysis Tips
 Use Statistics > Conversations to identify top talkers
 
 Combine network captures with authentication logs for correlation
 
 Identify patterns: single IP hitting multiple hosts or ports
 
-Example Behavior
+## Example Behavior
 Single IP sending SYN packets to ports 22, 80, 443 on multiple hosts within 30 seconds
 
 Repeated SMB session failures on administrative shares (C$)
