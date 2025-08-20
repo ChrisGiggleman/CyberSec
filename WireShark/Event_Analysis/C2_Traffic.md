@@ -25,9 +25,7 @@ tls && tcp.port != 443
 
 # Traffic to suspicious IP
 ip.addr == <suspect_ip>
-
-## Analysis Tips
-
+Analysis Tips
 Follow TCP/UDP streams to reconstruct communication
 
 Compare endpoints against threat intelligence feeds
@@ -37,7 +35,6 @@ Use time graphs to identify beacon intervals
 Check DNS TXT records for potential exfiltration payloads
 
 Example Behavior
-
 Malware contacting abcd1234.maliciousdomain.com every 5 minutes
 
 TLS handshake on port 8443 with unknown certificate
