@@ -1,4 +1,3 @@
-
 ---
 
 ### 3️⃣ `File_Exfiltration.md`
@@ -7,16 +6,43 @@
 # File Exfiltration
 
 ## Overview
-Attackers may exfiltrate sensitive data over HTTP, SMB, FTP, or other protocols. Detecting large or unusual transfers is critical.
+Attackers may exfiltrate sensitive data over protocols like HTTP, SMB, FTP, or DNS. Detecting unusual transfers is critical for preventing data breaches.
+
+## MITRE ATT&CK Mapping
+- **T1041** – Exfiltration Over C2 Channel  
+- **T1048** – Exfiltration Over Alternative Protocol  
+- **T1020** – Automated Exfiltration  
 
 ## Indicators of Compromise
-- Large files transferred to external hosts
-- Anonymous or unusual SMB access attempts
-- Uncommon HTTP POST requests
-- Multiple small packets forming a continuous flow to external IPs
+- Large file transfers to external hosts  
+- Anonymous or unusual SMB access  
+- HTTP POST requests with large payloads  
+- Continuous small packets forming a data stream to external IPs  
+- DNS tunneling or TXT record abuse  
 
-## Wireshark Filters
+## Advanced Wireshark Filters
 ```text
-http.request.method == "POST"
-smb2
-ftp
+# HTTP POST exfil
+http.request.method == "POST" && tcp.len > 1000
+
+# SMB file transfers
+smb2 && smb2.command == 0x05  # Write Request
+
+# FTP file transfers
+ftp-data
+
+______________________________________________________
+
+## Analysis Tips
+Follow TCP/UDP streams to see transferred content
+
+Inspect filenames and paths for sensitive data
+
+Compare traffic patterns to baseline network behavior
+
+Cross-reference with SIEM for large file transfers
+
+##  Example Behavior
+SMB write requests to hidden share \\192.168.1.50\C$
+
+HTTP POST sending 500KB of internal data to external domain
