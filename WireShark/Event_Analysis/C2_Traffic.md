@@ -15,6 +15,9 @@ C2 traffic is used by malware to communicate with remote servers for data exfilt
 - Abnormal DNS requests (randomized subdomains, TXT record abuse)  
 - Unusual User-Agent strings in HTTP or TLS headers
 
+<img width="1536" height="1024" alt="C2_traffic Wireshark" src="https://github.com/user-attachments/assets/23466396-66d1-4e3d-ab17-59e171bb756a" />
+
+
 ## Advanced Wireshark Filters
 ```text
 # DNS beaconing
@@ -44,4 +47,4 @@ Malware contacting abcd1234.maliciousdomain.com every 5 minutes
 TLS handshake on port 8443 with unknown certificate
 
 
-<img width="1536" height="1024" alt="C2_traffic Wireshark" src="https://github.com/user-attachments/assets/d69d78ef-855a-40c3-ab5b-c847134691a1" />
+
