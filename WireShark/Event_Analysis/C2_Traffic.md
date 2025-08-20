@@ -42,3 +42,6 @@ Example Behavior
 Malware contacting abcd1234.maliciousdomain.com every 5 minutes
 
 TLS handshake on port 8443 with unknown certificate
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5e25ac1-53a7-4433-a8d6-a055c46b7c29" />
