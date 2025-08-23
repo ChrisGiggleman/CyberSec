@@ -56,11 +56,11 @@ Edit
 ## 🔍 Event Analysis Topics
 Inside the **Event_Analysis/** folder, you will find detailed walkthroughs:
 
-- [Brute Force Detection](./Event_Analysis/Brute_Force.md)  
+- [Brute Force Detection](./Brute_Force.md)  
 - [DNS Tunneling](./Event_Analysis/DNS_Tunneling.md)  
 - [Malware Traffic](./Event_Analysis/Malware_Traffic.md)  
 - [Phishing Attack](./Event_Analysis/Phishing.md)  
-- [Data Exfiltration](./Event_Analysis/File_Exfiltration.md)  
+- [Data Exfiltration](./File_Exfiltration.md)  
 
 ---
 
