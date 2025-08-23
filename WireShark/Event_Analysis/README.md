@@ -1,69 +1,58 @@
-🕵️‍♂️ Event Analysis – CyberSec Labs
+# 🕵️ Wireshark Labs & Event Analysis
 
-This section focuses on incident response and network event analysis using Wireshark and related tools.
-Each subsection contains a detailed lab with objectives, setup instructions, guided steps, and screenshots.
+Welcome to the **Wireshark section** of the CyberSec Labs repository.  
+This section focuses on **network traffic analysis**, **protocol dissection**, and **event investigation** using Wireshark.  
 
-📂 Structure of Event Analysis
+---
 
-🔑 Brute Force Attack Detection
+## 📂 Directory Structure
+CyberSec/
+└── Wireshark/
+├── README.md # Overview of Wireshark labs
+├── TLS_Analysis.md # TLS traffic analysis lab
+├── Event_Analysis/ # Security event analysis case studies
+│ ├── Brute_Force.md
+│ ├── DNS_Tunneling.md
+│ ├── Malware_Traffic.md
+│ ├── Phishing.md
+│ └── Data_Exfiltration.md
+└── images/ # Screenshots and diagrams
 
-🦠 Malware Traffic Analysis
+yaml
+Copy
+Edit
 
-🌐 Suspicious Traffic Patterns
+---
 
-📤 Data Exfiltration Detection
+## 📘 Lab Guides
 
-🔒 Privilege Escalation Traces
+- [TLS Analysis](./TLS_Analysis.md) – Understand TLS handshakes, certificate inspection, and encrypted sessions.  
+- [Event Analysis](./Event_Analysis/) – Deep-dive case studies of attacks and anomalies.
 
-🎯 Learning Objectives
+---
 
-By working through these labs, you will:
+## 🔍 Event Analysis Topics
+Inside the **Event_Analysis/** folder, you will find detailed walkthroughs:
 
-Learn how to analyze PCAP files in Wireshark.
+- [Brute Force Detection](./Event_Analysis/Brute_Force.md)  
+- [DNS Tunneling](./Event_Analysis/DNS_Tunneling.md)  
+- [Malware Traffic](./Event_Analysis/Malware_Traffic.md)  
+- [Phishing Attack](./Event_Analysis/Phishing.md)  
+- [Data Exfiltration](./Event_Analysis/Data_Exfiltration.md)  
 
-Detect and investigate common attack patterns.
+---
 
-Correlate logs and packets to identify Indicators of Compromise (IoCs).
+## 📸 Screenshots
+All screenshots are stored in the [`images/`](./images/) folder for reference.  
+Example:  
 
-Apply incident response workflows to simulated attacks.
+![Wireshark Screenshot](./images/wireshark_overview.png)
 
-Strengthen your Blue Team / SOC investigation skills.
+---
 
-🛠️ Requirements
+## 🚀 Next Steps
+- Expand each case study with **realistic PCAP captures**.  
+- Add **filter cheatsheets** (`http`, `tcp.flags.syn==1 && tcp.flags.ack==0`, etc.).  
+- Provide **analysis challenges** for practice.  
 
-Operating System: Linux or Windows (Ubuntu recommended for labs).
-
-Tools:
-
-Wireshark
-
-tcpdump
- (optional for packet capture)
-
-Curl, Netcat, Grep, Ps, Lsof (for host-side investigations)
-
-📸 Example Wireshark Screenshot
-
-🚀 Getting Started
-
-Clone this repository:
-
-git clone https://github.com/YourUsername/CyberSec.git
-cd CyberSec/Event_Analysis
-
-
-Open the lab you want to start with:
-
-Brute Force Attack Detection
-
-Malware Traffic Analysis
-
-Follow the step-by-step instructions inside each section.
-
-📚 Recommended References
-
-Wireshark Documentation
-
-PCAP Samples Repository
-
-SANS Incident Response Resources
+---
