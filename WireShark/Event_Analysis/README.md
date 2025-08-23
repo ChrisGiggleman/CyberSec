@@ -60,7 +60,7 @@ Inside the **Event_Analysis/** folder, you will find detailed walkthroughs:
 - [DNS Tunneling](./Event_Analysis/DNS_Tunneling.md)  
 - [Malware Traffic](./Event_Analysis/Malware_Traffic.md)  
 - [Phishing Attack](./Event_Analysis/Phishing.md)  
-- [Data Exfiltration](./Event_Analysis/Data_Exfiltration.md)  
+- [Data Exfiltration](./Event_Analysis/File_Exfiltration.md)  
 
 ---
 
