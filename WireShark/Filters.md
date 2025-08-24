@@ -1,11 +1,6 @@
 # 📖 Wireshark Filter Cookbook  
 
 A collection of practical **Wireshark filters** for SOC, IR, and pentesting tasks.  
-Each entry includes:  
-
-- **Filter Expression** (copy/paste ready)  
-- **Use Case** (when/why to use)  
-- **Example Action** (how to apply in an investigation)  
 
 ---
 
@@ -14,13 +9,13 @@ Each entry includes:
 ### Filter by specific IP (src or dst)  
 ```wireshark
 ip.addr == 192.168.1.10
-Use Case: Focus only on one host
+
+
 Example: Investigate suspected compromised workstation
 
 ## Filter by source only
-'''wireshark
 ip.src == 192.168.1.10
-Example: Look at what traffic a host is generating
+
 
 ## Filter by destination only
 '''wireshark
