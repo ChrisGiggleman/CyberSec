@@ -1,57 +1,85 @@
-# 📖 Wireshark Filter Cookbook  
-
-A collection of practical **Wireshark filters** for SOC, IR, and pentesting tasks.  
+# Wireshark Filter Cookbook
+A collection of practical Wireshark filters for SOC, IR, and pentesting tasks.  
 
 ---
 
-## 🔎 Host & IP Based Filters  
+## 🔎 Host & IP Based Filters
 
-### Filter by specific IP (src or dst)  
-```wireshark
+**Filter by specific IP (src or dst):**  
 ip.addr == 192.168.1.10
 
+pgsql
+Copy
+Edit
+*Example:* Investigate suspected compromised workstation  
 
-Example: Investigate suspected compromised workstation'''
+**Filter by source only:**  
+ip.src == 192.168.1.10
 
-## **Filter by source only**
-'''ip.src == 192.168.1.10
-Example: Look at what traffic a host is generating'''
+pgsql
+Copy
+Edit
+*Example:* Look at what traffic a host is generating  
 
-## Filter by destination only
-'''wireshark
+**Filter by destination only:**  
 ip.dst == 192.168.1.10
-Example: See inbound connections to a server
 
-## Exclude internal IP range
-'''wireshark
+pgsql
+Copy
+Edit
+*Example:* See inbound connections to a server  
+
+**Exclude internal IP range:**  
 !(ip.addr == 192.168.0.0/16)
-Example: Focus on external communication only
 
-🌐 Protocol Filters
-## HTTP traffic only
-'''wireshark
+yaml
+Copy
+Edit
+*Example:* Focus on external communication only  
+
+---
+
+## 🌐 Protocol Filters
+
+**HTTP traffic only:**  
 http
-Example: Inspect web traffic for suspicious requests
 
-## HTTPS traffic
-'''wireshark
+markdown
+Copy
+Edit
+*Example:* Inspect web traffic for suspicious requests  
+
+**HTTPS traffic:**  
 tcp.port == 443
-Example: Identify encrypted sessions (good for volume checks, not content)
 
-## DNS traffic
-'''wireshark
+pgsql
+Copy
+Edit
+*Example:* Identify encrypted sessions (good for volume checks, not content)  
+
+**DNS traffic:**  
 dns
-Example: Investigate potential DNS tunneling or exfiltration
 
-## FTP traffic
-'''wireshark
+markdown
+Copy
+Edit
+*Example:* Investigate potential DNS tunneling or exfiltration  
+
+**FTP traffic:**  
 ftp || ftp-data
-Example: Catch plaintext file transfers
 
-## SMB / Windows file sharing
-'''wireshark
+markdown
+Copy
+Edit
+*Example:* Catch plaintext file transfers  
+
+**SMB / Windows file sharing:**  
 smb || smb2
-Example: Look for lateral movement or file access
+
+pgsql
+Copy
+Edit
+*Example:* Look for lateral movement or file access  
 
 🔐 Threat Hunting Filters
 Detect potential beaconing (same interval connections)
