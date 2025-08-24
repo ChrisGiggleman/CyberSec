@@ -11,11 +11,11 @@ A collection of practical **Wireshark filters** for SOC, IR, and pentesting task
 ip.addr == 192.168.1.10
 
 
-Example: Investigate suspected compromised workstation
+Example: Investigate suspected compromised workstation'''
 
-## Filter by source only
-ip.src == 192.168.1.10
-
+## **Filter by source only**
+'''ip.src == 192.168.1.10
+Example: Look at what traffic a host is generating'''
 
 ## Filter by destination only
 '''wireshark
