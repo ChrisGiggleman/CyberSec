@@ -81,67 +81,81 @@ Copy
 Edit
 *Example:* Look for lateral movement or file access  
 
-🔐 Threat Hunting Filters
-Detect potential beaconing (same interval connections)
-wireshark
-Copy
-Edit
+
+## 🔐 Threat Hunting Filters
+
+**Detect potential beaconing (same interval connections):**  
 ip.addr == <target IP> && tcp
-Then: Sort by time → look for repeating intervals
 
-Suspicious DNS queries (rare TLDs)
-wireshark
+markdown
 Copy
 Edit
+*Then:* Sort by time → look for repeating intervals  
+
+**Suspicious DNS queries (rare TLDs):**  
 dns.qry.name contains ".xyz"
-Example: Catch C2 using weird domains
 
-Cleartext credentials (HTTP POST logins)
-wireshark
+markdown
 Copy
 Edit
+*Example:* Catch C2 using weird domains  
+
+**Cleartext credentials (HTTP POST logins):**  
 http.request.method == "POST"
-Example: Spot credential leaks in HTTP
 
-Suspicious RDP traffic
-wireshark
+markdown
 Copy
 Edit
+*Example:* Spot credential leaks in HTTP  
+
+**Suspicious RDP traffic:**  
 tcp.port == 3389
-Example: Check if RDP is being brute-forced or used externally
 
-ICMP tunneling or ping sweeps
-wireshark
+markdown
 Copy
 Edit
+*Example:* Check if RDP is being brute-forced or used externally  
+
+**ICMP tunneling or ping sweeps:**  
 icmp
-Example: Look for abnormal ICMP payloads
 
-🛠️ Troubleshooting Filters
-TCP retransmissions & errors
-wireshark
+yaml
 Copy
 Edit
+*Example:* Look for abnormal ICMP payloads  
+
+---
+
+## 🛠️ Troubleshooting Filters
+
+**TCP retransmissions & errors:**  
 tcp.analysis.retransmission
-Example: Spot unstable connections
 
-Packets with no response (possible dropped traffic)
-wireshark
+markdown
 Copy
 Edit
+*Example:* Spot unstable connections  
+
+**Packets with no response (possible dropped traffic):**  
 tcp.analysis.lost_segment
-Example: Find network issues or firewall drops
 
-TLS handshake failures
-wireshark
+markdown
 Copy
 Edit
+*Example:* Find network issues or firewall drops  
+
+**TLS handshake failures:**  
 ssl.handshake.failure
-Example: Debug broken HTTPS sessions
 
-⚡ Quick Actions
-Use Ctrl+F → String to search inside packet contents (e.g., for password).
+yaml
+Copy
+Edit
+*Example:* Debug broken HTTPS sessions  
 
-Use Statistics → Conversations to pivot by IP, port, or protocol.
+---
 
-Export suspicious objects via File → Export Objects (HTTP/SMB/DICOM).
+## ⚡ Quick Actions
+
+- Use **Ctrl+F → String** to search inside packet contents (e.g., for `password`).  
+- Use **Statistics → Conversations** to pivot by IP, port, or protocol.  
+- Export suspicious objects via **File → Export Objects** (HTTP/SMB/DICOM).  
