@@ -13,7 +13,7 @@ This project is built to serve as a **practical knowledge base** for SOC analyst
 - [Windows Event Viewer](Windows_Event_Viewer/README.md) 
   Key logs, detection rules, and SOC investigation techniques.
 
-- [Pentesting Commands](Pentesting_Commands/README.md) *(Coming Soon)*  
+- [Pentesting Commands](Pentesting_Commands/README.md)  
   Quick reference for Nmap, Netcat, Hydra, Metasploit, and more.
 
 - [Linux Commands](Linux_Commands/README.md) *(Coming Soon)*  
