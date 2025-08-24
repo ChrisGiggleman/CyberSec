@@ -17,60 +17,44 @@ ip.addr == 192.168.1.10
 Use Case: Focus only on one host
 Example: Investigate suspected compromised workstation
 
-Filter by source only
-wireshark
-Copy
-Edit
+## Filter by source only
+'''wireshark
 ip.src == 192.168.1.10
 Example: Look at what traffic a host is generating
 
-Filter by destination only
-wireshark
-Copy
-Edit
+## Filter by destination only
+'''wireshark
 ip.dst == 192.168.1.10
 Example: See inbound connections to a server
 
-Exclude internal IP range
-wireshark
-Copy
-Edit
+## Exclude internal IP range
+'''wireshark
 !(ip.addr == 192.168.0.0/16)
 Example: Focus on external communication only
 
 🌐 Protocol Filters
-HTTP traffic only
-wireshark
-Copy
-Edit
+## HTTP traffic only
+'''wireshark
 http
 Example: Inspect web traffic for suspicious requests
 
-HTTPS traffic
-wireshark
-Copy
-Edit
+## HTTPS traffic
+'''wireshark
 tcp.port == 443
 Example: Identify encrypted sessions (good for volume checks, not content)
 
-DNS traffic
-wireshark
-Copy
-Edit
+## DNS traffic
+'''wireshark
 dns
 Example: Investigate potential DNS tunneling or exfiltration
 
-FTP traffic
-wireshark
-Copy
-Edit
+## FTP traffic
+'''wireshark
 ftp || ftp-data
 Example: Catch plaintext file transfers
 
-SMB / Windows file sharing
-wireshark
-Copy
-Edit
+## SMB / Windows file sharing
+'''wireshark
 smb || smb2
 Example: Look for lateral movement or file access
 
