@@ -10,7 +10,7 @@ This project is built to serve as a **practical knowledge base** for SOC analyst
 - [Wireshark](WireShark/README.md)  
   Packet analysis guides, filters, and protocol investigation notes.
 
-- [Windows Event Viewer](Windows_Event_Viewer/README.md) *(Coming Soon)*  
+- [Windows Event Viewer](Windows Event Viewer/README.md) 
   Key logs, detection rules, and SOC investigation techniques.
 
 - [Pentesting Commands](Pentesting_Commands/README.md) *(Coming Soon)*  
