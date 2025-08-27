@@ -21,10 +21,14 @@
 | **4634** | Logoff | User session ended. |
 | **4648** | Logon attempt with explicit credentials | Possible lateral movement. |
 | **4672** | Special privileges assigned | e.g., Admin login. |
+| **4688** | A new process was created. |
+| **4698** | A scheduled task was created. |
 | **4720** | New user account created | Watch for suspicious accounts. |
 | **4722** | Account enabled | Could indicate persistence. |
 | **4725** | Account disabled | Security/hardening event. |
 | **4726** | Account deleted | Check who deleted it. |
+| **4727** | A security-enabled group was created. |
+| **4728** | A member was added to a security-enabled group. |
 | **4740** | Account locked out | Brute force attempts or password issues. |
 
 ---
