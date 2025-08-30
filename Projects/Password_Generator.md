@@ -14,23 +14,23 @@ password-gen/
 This is the actual password generator tool.
 
 Features
+___
+|Generate random passwords with length control|
 
-Generate random passwords with length control
+|Options to include/exclude digits, symbols, uppercase, lowercase|
 
-Options to include/exclude digits, symbols, uppercase, lowercase
+|Exclude ambiguous characters (0/O, 1/l/I)|
 
-Exclude ambiguous characters (0/O, 1/l/I)
+|Require at least one of each chosen type (--require-each)|
 
-Require at least one of each chosen type (--require-each)
+|Generate passphrases (--passphrase)|
 
-Generate passphrases (--passphrase)
+|Calculate entropy (--show-entropy)|
 
-Calculate entropy (--show-entropy)
+|Copy password to clipboard (--copy)|
 
-Copy password to clipboard (--copy)
-
-Cross-platform: Linux, Windows, macOS
-
+|Cross-platform: Linux, Windows, macOS|
+___
 Code
 #!/usr/bin/env python3
 import argparse
