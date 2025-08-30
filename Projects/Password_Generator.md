@@ -2,7 +2,6 @@
 
 Cross-platform Password & Passphrase Generator with installers for Linux (.deb) and Windows (.exe).
 
-📂 Project Structure
 password-gen/
 ├── password_gen.py   # Main password generator script
 ├── build.py          # Installer builder script
@@ -191,8 +190,8 @@ def main():
 if __name__ == "__main__":
     main()
 
-3️⃣ Linux Workflow
-# Build the installer
+    3️⃣ Linux Workflow
+    # Build the installer
 python build.py
 
 # Install the .deb package
