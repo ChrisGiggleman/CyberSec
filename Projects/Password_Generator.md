@@ -139,3 +139,74 @@ python build.py
 
 
 Creates → password-gen-setup.exe installer.
+
+
+
+🔑 password_gen.py
+
+This is the main program — the Password & Passphrase Generator itself.
+It’s the one we wrote earlier that lets you run things like:
+
+python password_gen.py -l 20 --require-each
+python password_gen.py --passphrase 6 --show-entropy
+
+
+Features inside password_gen.py:
+
+Generates secure random passwords (letters, digits, symbols, etc.)
+
+Option to exclude ambiguous characters (0/O, 1/l/I, etc.)
+
+Option to enforce at least one of each selected character type
+
+Supports Diceware-style passphrases
+
+Calculates entropy (security strength estimate)
+
+Optional --copy to clipboard
+
+Works on Linux, Windows, macOS
+
+That’s the tool your end-users will run.
+
+🏗️ build.py
+
+This is the automation script for packaging.
+You don’t give this to end-users — you run it as the developer to create installers.
+
+Its job:
+
+Detects OS (Linux or Windows).
+
+On Linux:
+
+Wraps password_gen.py into a .deb package → password-gen_1.0.deb
+
+Lets you install with sudo dpkg -i password-gen_1.0.deb
+
+On Windows:
+
+Uses PyInstaller to create a standalone .exe (password_gen.exe)
+
+Feeds that .exe into Inno Setup, which produces a normal password-gen-setup.exe installer.
+
+So basically:
+
+password_gen.py → the actual password generator program.
+
+build.py → the script that turns it into installers for Linux/Windows.
+
+⚡ Example workflow for you as the developer:
+
+# Write/edit password_gen.py
+nano password_gen.py
+
+# Build installers
+python build.py
+
+
+After that, you’ll get:
+
+dist/password-gen_1.0.deb (Linux installer)
+
+password-gen-setup.exe (Windows installer)
