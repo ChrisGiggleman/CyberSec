@@ -57,23 +57,28 @@ flowchart LR
     C17 --> RS
     C18 --> DE
 ```
-##  📑 Quick Reference Table
-SANS CIS Controls (v8)	NIST CSF Functions	Summary
-Inventory of Assets	Identify (ID.AM)	Know what devices & systems exist
-Inventory of Software	Identify (ID.AM)	Track authorized software
-Data Protection	Protect (PR.DS)	Safeguard data everywhere
-Secure Configurations	Protect (PR.IP)	Harden systems and software
-Account/Access Management	Protect (PR.AC)	Enforce least privilege & MFA
-Vulnerability Management	Identify (ID.RA)	Continuously find and fix flaws
-Audit Log Management	Detect (DE.CM)	Monitor logs for anomalies
-Email & Malware Protections	Protect (PR.PT)	Secure endpoints and comms
-Data Recovery	Recover (RC.RP)	Ensure backup and restoration
-Network Security & Monitoring	Detect (DE.CM) / Protect (PR.AC)	Control, segment, and monitor
-Awareness Training	Protect (PR.AT)	Educate and train users
-Vendor Management	Identify (ID.SC)	Manage 3rd party risks
-Application Security	Protect (PR.IP)	Secure development practices
-Incident Response	Respond (RS.RP)	Plan, test, and respond
-Pen Testing	Detect (DE.CM)	Validate defenses through testing
+---
+
+## 📑 Quick Reference Table
+
+| **SANS CIS Controls (v8)**        | **NIST CSF Functions**        | **Summary**                               |
+|-----------------------------------|-------------------------------|-------------------------------------------|
+| Inventory of Assets               | Identify (ID.AM)              | Know what devices & systems exist          |
+| Inventory of Software             | Identify (ID.AM)              | Track authorized software                  |
+| Data Protection                   | Protect (PR.DS)               | Safeguard data everywhere                  |
+| Secure Configurations             | Protect (PR.IP)               | Harden systems and software                |
+| Account/Access Management         | Protect (PR.AC)               | Enforce least privilege & MFA              |
+| Vulnerability Management          | Identify (ID.RA)              | Continuously find and fix flaws            |
+| Audit Log Management              | Detect (DE.CM)                | Monitor logs for anomalies                 |
+| Email & Malware Protections       | Protect (PR.PT)               | Secure endpoints and comms                 |
+| Data Recovery                     | Recover (RC.RP)               | Ensure backup and restoration              |
+| Network Security & Monitoring     | Detect (DE.CM) / Protect (PR) | Control, segment, and monitor              |
+| Awareness Training                | Protect (PR.AT)               | Educate and train users                    |
+| Vendor Management                 | Identify (ID.SC)              | Manage 3rd party risks                     |
+| Application Security              | Protect (PR.IP)               | Secure development practices               |
+| Incident Response                 | Respond (RS.RP)               | Plan, test, and respond                    |
+| Pen Testing                       | Detect (DE.CM)                | Validate defenses through testing          |
+
 
 🔗 Official Documentation
 📘 SANS CIS Controls v8
