@@ -56,7 +56,8 @@ flowchart LR
     C16 --> PR
     C17 --> RS
     C18 --> DE
-📑 Quick Reference Table
+```
+##  📑 Quick Reference Table
 SANS CIS Controls (v8)	NIST CSF Functions	Summary
 Inventory of Assets	Identify (ID.AM)	Know what devices & systems exist
 Inventory of Software	Identify (ID.AM)	Track authorized software
