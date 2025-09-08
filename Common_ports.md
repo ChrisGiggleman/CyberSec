@@ -4,6 +4,18 @@ A quick reference guide for commonly used ports and services. Useful for securit
 
 ---
 
+## 📑 Table of Contents  
+
+- [📂 File Transfer & Remote Access](#-file-transfer--remote-access)  
+- [📧 Email Protocols](#-email-protocols)  
+- [🌐 Web & Secure Connections](#-web--secure-connections)  
+- [🔧 Network Services](#-network-services)  
+- [📁 File Sharing & Databases](#-file-sharing--databases)  
+- [🔒 VPN & Tunneling](#-vpn--tunneling)  
+- [⚡ Pro Tips](#-pro-tips)  
+
+---
+
 ## 📂 File Transfer & Remote Access  
 
 | Service | Port(s) |
